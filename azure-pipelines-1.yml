@@ -1,0 +1,16 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: none 
+
+- task: AzureMysqlDeployment@1
+  displayName: 'Execute Azure MySQL : InlineSqlTask'
+  inputs:
+    ConnectedServiceName: $(ConnectedServiceName)
+    ServerName: $(ServerName)
+    DatabaseName: schema1
+    SqlUsername: $(SqlUserName)
+    SqlPassword: $(SqlPassword)
+    TaskNameSelector: InlineSqlTask
+    SqlInline: SELECT * FROM schema1.table1;
