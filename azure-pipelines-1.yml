@@ -9,7 +9,7 @@ steps:
   inputs:
     ConnectedServiceName: $(ConnectedServiceName)
     ServerName: $(ServerName)
-    DatabaseName: schema1
+    DatabaseName: test1-db
     SqlUsername: $(SqlUserName)
     SqlPassword: $(SqlPassword)
     TaskNameSelector: InlineSqlTask
