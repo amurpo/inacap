@@ -13,4 +13,4 @@ steps:
     SqlUsername: $(SqlUserName)
     SqlPassword: $(SqlPassword)
     TaskNameSelector: InlineSqlTask
-    SqlInline: SELECT * FROM schema1.table1;
+    SqlInline: SELECT * FROM test1-db.SalesLT;
