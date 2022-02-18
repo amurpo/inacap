@@ -3,14 +3,13 @@ pool:
 
 steps:
 - checkout: none 
-
-- task: AzureMysqlDeployment@1
-  displayName: 'Execute Azure MySQL : InlineSqlTask'
+- task: MysqlDeploymentOnMachineGroup@1
   inputs:
-    ConnectedServiceName: $(ConnectedServiceName)
-    ServerName: $(ServerName)
-    DatabaseName: test1-db
-    SqlUsername: $(SqlUserName)
-    SqlPassword: $(SqlPassword)
-    TaskNameSelector: InlineSqlTask
-    SqlInline: SELECT * FROM test1-db.SalesLT;
+    TaskNameSelector: 'InlineSqlTask'
+    SqlInline: |
+      SELECT * 
+      FROM users;
+    ServerName: '$(DB_HOST)'
+    DatabaseName: '$(DB_DATABASE)'
+    SqlUsername: '$(DB_USERNAME)'
+    SqlPassword: '$(DB_PASSWORD)'
