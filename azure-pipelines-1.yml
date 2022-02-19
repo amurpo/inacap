@@ -1,3 +1,5 @@
+variables:
+  group: db
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -9,7 +11,6 @@ steps:
     SqlInline: |
       SELECT * 
       FROM users;
-    ServerName: '$(DB_HOST)'
-    DatabaseName: '$(DB_DATABASE)'
-    SqlUsername: '$(DB_USERNAME)'
-    SqlPassword: '$(DB_PASSWORD)'
+    ServerName: '$(host)'
+    SqlUsername: '$(user)'
+    SqlPassword: '$(pass)'
