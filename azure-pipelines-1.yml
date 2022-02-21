@@ -8,7 +8,7 @@ steps:
     TaskNameSelector: 'InlineSqlTask'
     SqlInline: |
       SELECT * 
-      FROM Games;
+      FROM test1;
     ServerName: servidores.ioseg.com
     SqlUsername: amurpo
     SqlPassword: 131fb719e5ed87c4519140c4c5e126a495306329bb4cfe3c
