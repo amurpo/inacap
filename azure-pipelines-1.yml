@@ -11,6 +11,6 @@ steps:
     SqlInline: |
       SELECT * 
       FROM Games;
-    ServerName: '$(host)'
+    ServerName: '$(host1)'
     SqlUsername: '$(user)'
     SqlPassword: '$(pass)'
