@@ -10,6 +10,6 @@ steps:
     TaskNameSelector: 'InlineSqlTask'
     SqlInline: |
       show databases;
-    ServerName: servidores.ioseg.com
+    ServerName: $(host)
     SqlUsername: $(user)
-    SqlPassword: NE2fp776KZbj@9u$Au3YSjSFLmpG!bWYfMsScho
+    SqlPassword: $(pass)
