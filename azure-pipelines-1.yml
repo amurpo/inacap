@@ -10,7 +10,7 @@ steps:
     TaskNameSelector: 'InlineSqlTask'
     SqlInline: |
       SELECT * 
-      FROM users;
+      FROM Games;
     ServerName: '$(host)'
     SqlUsername: '$(user)'
     SqlPassword: '$(pass)'
