@@ -11,5 +11,5 @@ steps:
     SqlInline: |
       show databases;
     ServerName: $(host1)
-    SqlUsername: $(user)
+    SqlUsername: $(user1)
     SqlPassword: $(pass1)
