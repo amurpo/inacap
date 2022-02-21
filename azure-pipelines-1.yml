@@ -1,5 +1,3 @@
-variables:
-  group: db
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -11,6 +9,6 @@ steps:
     SqlInline: |
       SELECT * 
       FROM Games;
-    ServerName: '$(host1)'
-    SqlUsername: '$(user)'
-    SqlPassword: '$(pass)'
+    ServerName: servidores.ioseg.com
+    SqlUsername: amurpo
+    SqlPassword: 131fb719e5ed87c4519140c4c5e126a495306329bb4cfe3c
