@@ -1,5 +1,5 @@
-variables:
-  - group: db
+#variables:
+ # - group: db
 pool:
   vmImage: 'ubuntu-latest'
 
