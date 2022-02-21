@@ -1,5 +1,5 @@
-#variables:
- # - group: db
+variables:
+  - group: db
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -10,6 +10,6 @@ steps:
     TaskNameSelector: 'InlineSqlTask'
     SqlInline: |
       show databases;
-    ServerName: $(host)
+    ServerName: $(host1)
     SqlUsername: $(user)
-    SqlPassword: $(pass)
+    SqlPassword: $(pass1)
